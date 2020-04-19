@@ -10,8 +10,8 @@
 <body>
   <div class="page">
     <header class="header">
-      <div class=header__logo>
-        <a class="header__logo_link" href="#"><img class="header__logo_img" src="images/logo_place_header.svg" alt="Логотип ЯП"></a>
+      <div class="logo logo_place_header">
+        <a class="logo_place_header_link" href="#"><img class="logo_place_header_img" src="images/logo_place_header.svg" alt="Логотип ЯП"></a>
       </div>
       <h1 class="header__title">Научиться учиться</h1>
       <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?<a href="#" class="header__link">Узнать &rarr;</a></p>
@@ -32,8 +32,10 @@
       </section>
 
       <section class="digits">
-        <h2 class="section-title">Цифры и факты</h2>
-        <h3 class="section-subtitle margin-bottom_s">Про учёбу и мозг</h3>
+        <header class="digits__title">
+          <h2 class="section-title">Цифры и факты</h2>
+          <p class="section-subtitle margin-bottom_s">Про учёбу и мозг</p>
+        </header>
         <div class="table"> 
           <div class="table__cell margin-bottom_s">
             <p class="table__heading">86 миллиардов</p>
@@ -41,7 +43,7 @@
           </div>
           <div class="table__cell margin-bottom_s">
             <p class="table__heading">2.1 миллиарда</p>
-            <p class="table__text">Число нуждающихся в повышении квалификации</p>
+            <p class="table__text margin-bottom_xs">Число нуждающихся в повышении квалификации</p>
             <p class="table__text margin-bottom_0">Всемирный Банк, 2017</p>
           </div>
           <div class="table__cell margin-bottom_s">
@@ -54,7 +56,7 @@
           </div>
           <div class="table__cell">
             <p class="table__heading">420 миллионов</p>
-            <p class="table__text">Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства</p>
+            <p class="table__text margin-bottom_xs">Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства</p>
             <p class="table__text margin-bottom_0">Всемирный Банк, 2017</p>
           </div>
           <div class="table__cell">
@@ -80,8 +82,10 @@
 
       <section class="kaufman">
         <img class="kaufman__trangle" alt="Треугольник" src="images/kaufman-triangle.svg">
-        <h2 class="section-title__theme_dark">Принципы обучения</h2>
-        <h3 class="section-subtitle__theme_dark margin-bottom_m">от Джоша Кауфмана</h3>
+        <header class="kaufman__title">
+          <h2 class="section-title__theme_dark">Принципы обучения</h2>
+          <p class="section-subtitle__theme_dark margin-bottom_m">от Джоша Кауфмана</p>
+        </header>
         <div class="table__theme_dark"> 
           <div class="table__cell_theme_dark margin-bottom_m">
             <p class="table__heading">1</p>
@@ -129,28 +133,35 @@
     <footer class="footer">
       <div class=footer__columns>
         <div class="footer__columns_content_copyright">
+          <div class="logo logo_place_footer">
             <a class="logo_place_footer_link" href="#"><img class="logo_place_footer_img" src="images/logo_place_footer.svg" alt="Логотип ЯП"></a>
-            <p class="footer__author">&COPY; 2020. Попова Светлана</p>
+          </div>
+          <p class="footer__author">&COPY; 2020. Попова Светлана</p>
         </div>
         <div class="footer__columns_content_info">
           <h4 class="footer__column-heading">О Практикуме</h4>
           <nav class="footer__column_menu">
-            <a class="footer__column_link" href="#">Главная</a>
-           <a class="footer__column_link" href="#">Концепция</a>
-           <a class="footer__column_link" href="#">Наставники</a>
+            <ul class="footer__column_list">
+            <li><a class="footer__column_link" href="#">Главная</a></li>
+            <li><a class="footer__column_link" href="#">Концепция</a></li>
+            <li><a class="footer__column_link" href="#">Наставники</a></li>
+            </ul>
           </nav>
         </div>
+        <!--СДЕЛАТЬ ИЗ СОЦСЕТЕЙ МЕНЮ!!!!!!!!!!!!!!!!!-->
         <div class="footer__columns_content_social">
           <h4 class="footer__column-heading">Соцсети</h4>
-          <a class="footer__social-icon_link" href="#">
-            <p class="footer__social-icon_text"><img class="footer__social-icon_img" src="images/facebook_color_white.svg" alt="Facebook">Facebook</p>
-          </a>
-         <a class="footer__social-icon_link" href="#">
-            <p class="footer__social-icon_text"><img class="footer__social-icon_img" src="images/vk_color_white.svg" alt="Вконтакте">Вконтакте</p>
-         </a>
-         <a class="footer__social-icon_link" href="#">
-            <p class="footer__social-icon_text"><img class="footer__social-icon_img" src="images/instagram_color_white.svg" alt="Instagram">Instagram</p>
-         </a>
+          <ul class="footer__column_list">
+            <li><a class="footer__social-icon_link" href="#">
+              <p class="footer__social-icon_text"><img class="footer__social-icon_img" src="images/facebook_color_white.svg" alt="Facebook">Facebook</p>
+            </a></li>
+            <li><a class="footer__social-icon_link" href="#">
+              <p class="footer__social-icon_text"><img class="footer__social-icon_img" src="images/vk_color_white.svg" alt="Вконтакте">Вконтакте</p>
+            </a></li>
+            <li><a class="footer__social-icon_link" href="#">
+              <p class="footer__social-icon_text"><img class="footer__social-icon_img" src="images/instagram_color_white.svg" alt="Instagram">Instagram</p>
+            </a></li>
+          </ul>
         </div>
         </div>
     </footer>

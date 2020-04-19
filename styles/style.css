@@ -25,13 +25,16 @@
    /* выше установили ограничения для секции */
 }
 
-.header__logo{
+.logo{
     position: absolute;
     z-index: 10;
-    left: 64px;
-    top: 30px;
     width: 183px;
     height: 32px;
+}
+
+.logo_place_header{
+    left: 64px;
+    top: 30px;
 }
 
 .header__title{
@@ -182,9 +185,15 @@
     margin-bottom: 0px;
 }
 
+.margin-bottom_xs{
+    margin-bottom: 20px;
+}
+
+
                    /*Блок ФЕЙНМАН*/
 
 .feynman{
+    position: relative;
     height: 790px;
     background-color: #f2f2f2;
     background-image: url(../images/feynman.png);
@@ -213,7 +222,7 @@
 
 .feynman__link{
     position: absolute;
-    top: 2459px;
+    top: 50%;
     right: 48px;
     text-decoration: none;
     font-size: 36px;
@@ -290,11 +299,11 @@
 .footer{
     background-color: #1f1f1f;
     padding: 60px 0 40px 0;
+    min-height: 350px;
 }
 
 .footer__columns{
     display: flex;
-    flex-basis: 711px;
     margin:0 64px;
     justify-content: space-between;
     width: 90%;
@@ -304,18 +313,18 @@
 
 .footer__columns_content_copyright{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: flex-end;
+    flex-basis: 711px;
+    position: relative;
 }
 
-.logo_place_footer_img{
-    width: 183px;
-    height: 35px;
+.logo_place_footer{
+    top:0;
+    left:0;
 }
 
 .footer__author{
-    margin-bottom: 18px;
+    margin: 18px 0 18px 0;
     line-height: 25px;
     font-size: 18px;
     font-weight: normal;
@@ -344,6 +353,12 @@
     flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+.footer__column_list{
+list-style-type: none;
+padding: 0;
+margin: 0;
 }
 
 .footer__column_link{
