@@ -8,3 +8,8 @@
     line-height: 51px;
     color: black;
 }
+
+.feynman__link:hover{
+    opacity: .5;
+    transition: opacity .2s ease;
+}
