@@ -1,0 +1,15 @@
+@import url(./__column/footer__columns__column.css);
+.footer__columns{
+    display: flex;
+    margin:0 64px;
+    justify-content: space-between;
+    width: 90%;
+    height: 300px;
+    flex-wrap: wrap;
+}
+.footer__columns_content_copyright{
+    display: flex;
+    align-items: flex-end;
+    flex-basis: 711px;
+    position: relative;
+}

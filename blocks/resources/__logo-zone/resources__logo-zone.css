@@ -1,0 +1,9 @@
+@import url(./__logo/resources__logo-zone__logo.css);
+.resources__logo-zone{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 1100px;
+    margin: 80px auto 217px auto;
+}

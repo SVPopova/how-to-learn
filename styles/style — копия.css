@@ -21,6 +21,7 @@
     height: 100vh;
     min-height: 600px;
     max-height: 756px;
+    overflow: hidden;
 
    /* выше установили ограничения для секции */
 }
@@ -81,23 +82,37 @@
     right: 0;
     top: 64px;
     z-index: 0;
+    transform: rotate(-15deg);
+}
+.rotation{
+    animation: rotation 20s linear infinite;
+}
+@keyframes rotation {
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    } 
 }
 
-                   /*Блок description ГЛАВНЫЕ ПРОБЛЕМЫ ОБУЧЕНИЯ*/
+/*Блок description ГЛАВНЫЕ ПРОБЛЕМЫ ОБУЧЕНИЯ*/
 
 .description{
     width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
-.description__two-columns{
+.two-columns{
     display: flex;
-    margin: 100px auto 100px auto;
+    margin: 0 auto;
     width: 80%;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.description__two-columns_bref{
+.two-columns_bref{
     color: #2f80ed;
     margin: 0;
     width: 175px;
@@ -106,24 +121,167 @@
     line-height: 1.2;
 }
 
-.description__two-columns_main-text{
+.two-columns_main-text{
     flex-direction: column;
     flex-basis: 80%;
     min-width: 784px;
 }
 
-.description__two-columns_bref_paragraph{
+.two-columns_bref_paragraph{
     margin: 0 0 30px 0;
     font-size: 24px;
     font-weight: normal;
     line-height: 34px;
 }
 
-.description__two-columns_bref_paragraph_span-accept{
+.two-columns_bref_paragraph_span-accept{
     font-size: 24px;
     font-weight: bold;
     line-height: 34px;
 }
+
+
+/*  Блок TECHNIQUES  */
+
+
+.techniques{
+    width: 80%;
+    margin: auto;
+}
+
+.cards{
+    width: 920px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.card__item{
+    margin: 0 100px 0 0;
+    width: 240px;
+    
+}
+
+.card__image{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin: 60px 40px 43px 40px;
+}
+
+.card__title{
+    margin: 0 0 16px 0;  
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.15; 
+}
+
+.card__description{
+    margin: 0 0 60px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 23px;
+}
+
+.margin-right0{
+    margin-right: 0;
+}
+
+/*БЛОК TED*/
+
+.video__iframes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 50px auto 0 auto;
+    position: relative;
+    top: 50px;
+}
+.video__iframe{
+width: 515px;
+height: 316px;
+margin: 0 20px 0 auto;
+}
+.margin__iframe{
+    margin:0 auto 0 0;
+}
+
+/*Блок OAKLEY*/
+.oakley{
+    width: 100%;
+    background-color: #f2f2f2;
+    padding-top: 160px;
+}
+
+/*Блок KHAN*/
+
+.khan{
+background-color: #f2f2f2;
+  width: 100%;  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 105px;
+}
+.khan__container{
+    width: 80%;
+    margin: 0 auto 0 auto;
+}
+.khan__container_author{
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 42px; 
+    margin: 0;
+}
+.khan__container_title{
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.15; 
+    margin:0;
+}
+.khan__container_quote{
+    width: 790px;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 34px; 
+    margin: 50px 0 36px 0;
+}
+.khan__container_quote-author{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.15; 
+    margin: 0;
+}
+.khan__container_quote-author-subtitle{
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1.15; 
+    margin: 10px 0 68px 0;
+}
+.khan__container_book-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;  
+    margin: 0;
+}
+.khan__container_book-pic{
+    width: 620px;
+    height: 608px;
+    margin: 0 48px 0 0;
+}
+.khan__container_buy-link{
+    text-decoration: none;
+    color: #2f80ed;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 42px; 
+}
+
 
                    /*Блок digits ЦИФРЫ И ЧИСЛА*/
 
@@ -200,7 +358,7 @@
     background-position: left bottom;
     background-repeat: no-repeat;
     background-size: 867px 637px;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .feynman__title{
@@ -247,6 +405,7 @@
     z-index: 0;
     width: 877px;
     height: 877px;
+    animation: rotation 20s linear infinite;
 }
 
 .section-title__theme_dark{
@@ -293,6 +452,27 @@
     margin-right: 0;
     z-index: 1;
 }
+
+/*БЛОК ПОЛЕЗНЫЕ РЕСУРСЫ*/
+
+.resources__logo-zone{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 1100px;
+    margin: 80px auto 217px auto;
+}
+.resources__logo{
+width: 270px;
+height: 38px;
+margin: 0;
+}
+
+
+
+
+
 
                    /*Блок FOOTER */
 

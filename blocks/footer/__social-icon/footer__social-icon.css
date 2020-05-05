@@ -1,0 +1,10 @@
+@import url(./__img/footer__social-icon__img.css);
+@import url(./__link/footer__social-icon__link.css);
+@import url(./__text/footer__social-icon__text.css);
+.footer__social-icon{
+    display: flex;
+    margin-bottom: 16px;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,15 @@
+@import url(./__bref/two-columns__bref.css);
+@import url(./__main_text/two-columns__main_text.css);
+.two-columns{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+

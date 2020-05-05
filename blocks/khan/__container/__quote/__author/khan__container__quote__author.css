@@ -1,0 +1,7 @@
+@import url(./__subtitle/khan__container__quote__author__subtitle.css);
+.khan__container_quote-author{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.15; 
+    margin: 0;
+}
