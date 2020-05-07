@@ -1,6 +1,4 @@
-@import url(./_paragraph/two-columns__bref_paragraf.css);
-
-.two-columns_bref{
+.two-columns__bref{
     color: #2f80ed;
     margin: 0;
     width: 175px;

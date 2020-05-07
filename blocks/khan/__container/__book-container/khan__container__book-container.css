@@ -1,9 +1,0 @@
-@import url(./__book-pic/khan__container__book-container__book-pic.css);
-@import url(./__buy-link/khan__container__book-container__buy-link.css);
-.khan__container_book-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;  
-    margin: 0;
-}

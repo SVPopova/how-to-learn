@@ -4,3 +4,6 @@
     line-height: 1.2;
     margin: 0;
 }
+.table__text:nth-child(3){
+    margin-top: 20px;
+}
